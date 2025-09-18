@@ -48,6 +48,10 @@ text goes outside
 # manual
 ```
 
+```{r}
+"test git connection"
+```
+
 
 ## Learning Outcome 1: Mathematical Expressions and Logical Statements
 
