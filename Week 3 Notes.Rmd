@@ -381,7 +381,9 @@ Sometimes, you don't need a full dataframe, you just want to use a piece of it. 
 For instance, we could use indexing to get only cars in the mtcars dataset with 4 gears.
 
 ```{r}
-
+mtcars[mtcars$gear==4,]
+fourGear <-subset(mtcars, mtcars$gear==4)
+fourGear
 ```
 
 In this case, you'll notice that I put a comma after the logical statement. This is because we want all of the **rows** where the car has 4 gears.
@@ -391,7 +393,8 @@ In this case, you'll notice that I put a comma after the logical statement. This
 If we wanted to get the same subset of data as above, we could do the following:`subset(dataframe, condition)`
 
 ```{r}
-#five gears and 6 cyl
+fiveGearSixCyl <- subset(mtcars, mtcars$gear==5 & mtcars$cyl==6)
+fiveGearSixCyl
 ```
 
 can combine logical statements in all the ways we talked about before
