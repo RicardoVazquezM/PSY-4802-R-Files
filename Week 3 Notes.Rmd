@@ -357,7 +357,7 @@ tvShowRatings <- cbind.data.frame(tvShows, ratings)
 4.  Print the information in the 2nd row.
 
 ```{r}
-tvShowRatings
+tvShowRatings[2,]
 ```
 
 5.  Print the information in the 2nd column.
